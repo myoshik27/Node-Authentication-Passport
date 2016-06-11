@@ -109,7 +109,4 @@ module.exports = function(passport) {
         });
 
     }));
-
-};    
-    }));
 };
