@@ -41,6 +41,16 @@ module.exports = function(app, passport){
         failureFlash : true // allow flash messages
     }));
 
+    /*
+	
+	There is also much more you can do with this. Instead of specifying a successRedirect, you could use a callback and take more control over 
+	how your application works. Here is a great stackoverflow answer on error handling. It explains how to use done() and how to be more specific 
+	with your handling of a route.
+
+	http://stackoverflow.com/questions/15711127/express-passport-node-js-error-handling
+
+    */
+
 	// ===================================
 	// PROFILE SECCTION ==================
 	// ===================================
