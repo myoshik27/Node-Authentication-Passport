@@ -1,11 +1,12 @@
 // config/auth.js
 
 // expose our config directly to our application using module.exports
+var secret = require('./secret.js');
 module.exports = {
 
     'facebookAuth' : {
-        'clientID'      : 'your-secret-clientID-here', // your App ID
-        'clientSecret'  : 'your-client-secret-here', // your App Secret
+        'clientID'      : secret.facebookAuth.clientID, // your App ID
+        'clientSecret'  : secret.facebookAuth.clientSecret, // your App Secret
         'callbackURL'   : 'http://localhost:8000/auth/facebook/callback'
     },
 
