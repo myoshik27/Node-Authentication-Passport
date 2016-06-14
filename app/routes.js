@@ -193,4 +193,4 @@ function isLoggedIn(req, res, next) {
 
 	res.redirect('/');
 }
-Status API Training Shop Blog About
+
