@@ -159,12 +159,12 @@ module.exports = function(passport) {
                     newUser.facebook.email = profile.emails[0].value; // facebook can take multiple emails so we will take the first
                     return done(null)
                     // save our new user in the database
-                    // newUser.save(function(err){
-                    //     if (err) 
-                    //         throw err;
-                    //     // if successful, return new user
-                    //     return done(null, newUser);
-                    // });
+                    newUser.save(function(err){
+                        if (err) 
+                            throw err;
+                        // if successful, return new user
+                        return done(null, newUser);
+                    });
                 }
             });
         });
