@@ -143,7 +143,7 @@ module.exports = function(passport) {
                 if(err) return done(err);
 
                 // if the user is found, then log them in
-                console.log("Profile.id: ", profile.id);
+                // console.log("Profile.id: ", profile.id);
                 console.log("==================== Facebook User Found? " + user + " ====================");
                 if(user) return done(null, user);
 
@@ -157,7 +157,7 @@ module.exports = function(passport) {
                     newUser.facebook.name = profile.name.givenName + ' ' + profile.name.familyName; // look at the passport user profile to see how names are returned
                     console.log("==================== Facebook Profile Returned ====================", profile);
                     newUser.facebook.email = profile.emails[0].value; // facebook can take multiple emails so we will take the first
-                    return done(null)
+                    
                     // save our new user in the database
                     newUser.save(function(err){
                         if (err) 
