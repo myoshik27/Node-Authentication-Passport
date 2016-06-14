@@ -14,21 +14,21 @@ var userSchema = mongoose.Schema({
 	}, 
 
 	facebook		: 	{
-		id			: 	Number,
+		id			: 	String,
 		token		: 	String,
 		email		: 	String, 
 		name		: 	String
 	},
 
 	twitter 		: 	{
-		id			: 	Number,
+		id			: 	String,
 		token		: 	String,
 		displayName : 	String,
 		username	: 	String
 	},
 
 	google 			: 	{
-		id 			: 	Number,
+		id 			: 	String,
 		token 		: 	String,
 		email 		: 	String, 
 		name 		: 	String
